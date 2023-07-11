@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter task" required>
+            <button id="addButton">Add</button>
+        </div>
+        <div class="choose">
+            <button id="allButton" onclick="showList('allList')">All</button>
+            <button id="pendingButton" onclick="showList('pendingList')">Pending</button>
+            <button id="completedButton" onclick="showList('completedList')">Completed</button>
+        </div>
+        <div class="lists">
+            <div>
+                <ul id="pendingList" class="task-list">
+
+                </ul>
+            </div>
+
+            <div>
+                <ul id="completedList" class="task-list">
+                </ul>
+            </div>
+
+            <div>
+                <ul id="allList" class="task-list">
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js">  </script>
+</body>
+
+</html>
